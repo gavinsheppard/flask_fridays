@@ -1,10 +1,15 @@
-<h1>Hello, world!</h1>
+{% extends 'base.html' %}
 
-<p>This is my first webpage!</p>
-<ul>
-    {% for fav in favorites %}
+{% block content %}
+
+
+    <h1>Hello, world!</h1>
+
+    <p>This is my first webpage!</p>
+    <ul>
+        {% for fav in favorites %}
         <li>{{ fav }}</li>
-    {% endfor %}
-</ul>
+        {% endfor %}
+    </ul>
 
-<h3>{{ favorites.0 }}</h3>
+{% endblock %}
